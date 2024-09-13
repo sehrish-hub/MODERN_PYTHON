@@ -1,0 +1,11 @@
+COMMANDS RUN
+
+manually run
+cmd open
+docker build -t jupyter filename . (for image build)
+docker run -d -p 8888:8888 filename            (container run)
+
+  Now run through devcontainer
+after json file create
+
+jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root --no-browser
