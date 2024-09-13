@@ -1,0 +1,22 @@
+{
+    "name": "Python 3.12 Jupyter Dev Container",
+    "dockerFile": "Dockerfile",
+    "context": ".",
+    "appPort": [8888],
+    "extensions": [
+      "ms-python.python",
+      "ms-python.vscode-pylance"
+    ],
+    "settings": {
+      "python.pythonPath": "/usr/local/bin/python",
+      "python.linting.enabled": true,
+      "python.linting.pylintEnabled": true,
+      "python.formatting.autopep8Path": "/usr/local/bin/autopep8"
+    },
+    "postCreateCommand": "pip install -r requirements.txt",
+    "runArgs": [
+      "--network=host"
+    ],
+    "remoteUser": "root"
+  }
+  
