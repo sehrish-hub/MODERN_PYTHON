@@ -1,0 +1,5 @@
+COMMANDS RUN
+
+docker-compose up --build
+docker build -t jypyternotebook . 
+docker run -p 8888:8888 jupyternotebook

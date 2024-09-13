@@ -1,10 +1,10 @@
 FROM python:3.12-slim
 
-RUN mkdir fourth-jupyter
+RUN mkdir second_jupeyter_file
 
-WORKDIR /fourth-jupyter
+WORKDIR /second_jupeyter_file
 
-COPY . /fourth-jupyter
+COPY . /second_jupeyter_file
 
 RUN pip install jupyter
 
